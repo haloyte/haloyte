@@ -12,16 +12,20 @@ export default function ContactPage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="w-full bg-black-900">
-        <div className="mt-[62px] flex flex-col gap-2">
+        <div className=" flex flex-col gap-2">
           <div className="flex items-start md:flex-col">
-            <Img
-              src="images/img_ellipse_14.png"
-              alt="Image"
-              className="mt-[136px] h-[196px] w-[6%] object-contain md:w-full"
-            />
+            {/* Glow Left */}
+                   <Img
+                     src="images/glow_left.png"
+                     alt="Glow Left"
+                     className="absolute left-0 top-[12%] md:top-[8%] h-[274px] w-auto object-contain pointer-events-none"
+                   />
             <div className="flex flex-1 flex-col items-start gap-[18px] self-center md:self-stretch md:px-5">
-              <div className="mx-auto flex w-full max-w-[1206px] flex-col items-center">
-                <Header className="flex-col gap-[34px] self-stretch" />
+             <div className="mx-auto w-full max-w-[1306px]">
+                              <Header className="gap-5" />
+                            </div>
+              <div className="mx-auto flex w-full  flex-col items-center">
+             
                 <a href="#" className="md:text-[48px]">
                   <Heading as="h1" className="text-[80px] font-bold">
                     CONTACT US
@@ -61,24 +65,33 @@ export default function ContactPage() {
                       shape="round"
                       className="self-stretch rounded-[14px] !border !border-blue_gray-400 px-3"
                     />
+                    <div className="flex justify-center mt-4 w-full">
+  <Button
+    size="lg"
+    shape="round"
+    className="rounded-[40px] p-7 w-auto"
+  >
+    SEND MESSAGE
+  </Button>
+</div>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="relative h-[562px] md:h-auto">
-            <Button
-              size="lg"
-              shape="round"
-              className="mr-[314px] mt-2.5 w-full min-w-[150px] max-w-[150px] rounded-[20px] px-5 md:mr-0"
-            >
-              SEND MESSAGE{" "}
-            </Button>
-            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-end">
-              <Img src="images/img_ellipse_15.png" alt="Image" className="h-[196px] w-[8%] object-contain" />
-              <Footer className="relative mt-[-76px] self-stretch" />
+          <div className="relative  md:h-auto">
+           
+            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-end"> {/* <Img src="images/img_ellipse_15.png" alt="Image" className="h-[196px] w-[8%] object-contain" /> */}
+               {/* Glow Right */}
+                      <Img
+                        src="images/glow_right.png"
+                        alt="Glow Right"
+                        className="absolute right-0 bottom-[77%] h-[274px] w-auto object-contain pointer-events-none"
+                      />
             </div>
           </div>
+              <Footer className=" w-full" />
         </div>
       </div>
     </>
