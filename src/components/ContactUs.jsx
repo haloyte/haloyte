@@ -37,7 +37,7 @@ const ContactUs = () => {
               size="lg"
               shape="round"
               colorScheme="transparent"
-              className="w-auto px-10 pb-3 text-[150px] md:text-[48px] font-bold uppercase rounded-full"
+              className="w-auto px-10 pb-3 text-[150px] md:text-[48px] font-bold uppercase rounded-full "
               style={{
                 WebkitTextStroke: "3px white", // White outline
                 color: "transparent", // Transparent fill
@@ -51,9 +51,9 @@ const ContactUs = () => {
               size="lg"
               shape="round"
               colorScheme="transparent"
-              className="relative w-auto px-10 py-3 text-[20px] font-semibold uppercase border-2 border-white text-white rounded-full overflow-hidden transition duration-300"
+              className="relative w-auto px-10 py-7 text-[20px] font-semibold uppercase border-2 border-white text-white rounded-full overflow-hidden transition duration-300"
             >
-              <span className="relative z-10 text-white">GET IN TOUCH</span>
+              <span className=" text-white-a700">GET IN TOUCH</span>
               <span className="absolute inset-0 bg-white transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
             </Button>
           </div>
