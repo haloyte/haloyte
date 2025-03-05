@@ -9,11 +9,15 @@ export default function LogoColumn({
   return (
     <div {...props} className={`${props.className} flex flex-col w-[32%] md:w-full`}>
       <div className="self-stretch">
-        <Img src={logoImage} alt="Logo15one" className="h-[340px] w-full rounded-[20px] object-cover" />
+        <Img
+          src={logoImage}
+          alt="Logo"
+          className="h-[340px] w-full rounded-[30px] object-cover"
+        />
         <Button
           size="4xl"
           shape="square"
-          className="relative ml-[74px] mr-[86px] mt-[-16px] w-full max-w-[176px] rotate-[-5deg] self-stretch px-2.5 font-sfprodisplay font-medium"
+          className="relative mt-[-16px] w-full rotate-[-5deg] self-stretch px-4 py-3 font-sfprodisplay font-medium text-center"
         >
           {logoButtonText}
         </Button>
@@ -21,4 +25,3 @@ export default function LogoColumn({
     </div>
   );
 }
-
