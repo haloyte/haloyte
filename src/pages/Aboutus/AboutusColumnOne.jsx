@@ -8,23 +8,24 @@ export default function AboutusColumnOne() {
         <Heading size="headinglg" as="h2" className="text-[28px] font-bold md:text-[26px] sm:text-[24px]">
           WHAT SETS US APART
         </Heading>
-        <div className="flex w-[80%] justify-center rounded-[10px] bg-primary p-5 md:w-full">
-          <Text size="text7xl" as="p" className="w-[98%] text-[24px] font-normal leading-7 md:text-[22px]">
-            <>
-              Innovative Solutions: We stay ahead of the curve by embracing the latest technologies and trends to
-              deliver innovative solutions that set your brand apart in the digital landscape.
-              <br />
-              Client-Centric Focus: Your success is our success. We prioritize open communication, responsiveness, and a
-              client-centric approach to build long-lasting partnerships.
-              <br />
-              Creative Excellence: Our team is a blend of creative minds and technical experts. From concept to
-              execution, we infuse creativity into every aspect of our work, ensuring your brand leaves a lasting
-              impression.
-            </>
-          </Text>
+        <div className="flex w-[80%] justify-center rounded-[10px] bg-primary p-5 md:w-full text-white-a700 ">
+          <ul className="w-[98%] list-disc text-[24px] font-normal leading-7 text-white md:text-[22px] p-">
+            <li>
+              <strong>Innovative Solutions:</strong> We stay ahead of the curve by embracing the latest technologies and 
+              trends to deliver innovative solutions that set your brand apart in the digital landscape.
+            </li>
+            <li>
+              <strong>Client-Centric Focus:</strong> Your success is our success. We prioritize open communication, 
+              responsiveness, and a client-centric approach to build long-lasting partnerships.
+            </li>
+            <li>
+              <strong>Creative Excellence:</strong> Our team is a blend of creative minds and technical experts. From 
+              concept to execution, we infuse creativity into every aspect of our work, ensuring your brand leaves a 
+              lasting impression.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   );
 }
-

@@ -3,7 +3,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import UIUXDesignComponent from "components/UIUXDesignComponent";
 import ServicesColumnbasicpack from "./ServicesColumnbasicpack";
-import ServicesRowcontactus from "./ServicesRowcontactus";
+// import ServicesRowcontactus from "./ServicesRowcontactus";
+import ContactUs from "../../components/ContactUs";
 import { Text, Heading } from "components/ui";
 import React, { Suspense } from "react";
 
@@ -50,7 +51,8 @@ export default function ServicesPage() {
           <div className="mt-[46px] flex flex-col gap-2.5 self-stretch">
             <ServicesColumnbasicpack />
             <div className="flex flex-col gap-11 bg-black-900">
-              <ServicesRowcontactus />
+              {/* <ServicesRowcontactus /> */}
+              <ContactUs />
               <Footer />
             </div>
           </div>

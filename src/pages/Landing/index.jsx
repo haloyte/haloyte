@@ -4,7 +4,9 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import LandingRowFive from "./LandingRowFive";
 import LandingRowSeven from "./LandingRowSeven";
-import LandingRowcontactus from "./LandingRowcontactus";
+
+import ContactUs from "../../components/ContactUs";
+
 import LandingRowlineeleven from "./LandingRowlineeleven";
 import LandingRowlinetwelve from "./LandingRowlinetwelve";
 import { Img } from "components/ui";
@@ -73,7 +75,8 @@ export default function LandingPage() {
         {/* skill section ends */}
         <div className="flex flex-col gap-11 bg-black-900">
         {/* contact us section starts */}
-          <LandingRowcontactus />
+        <ContactUs />
+
         {/* contact us section starts */}
 
           <Footer />

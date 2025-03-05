@@ -5,29 +5,61 @@ export default function UserProfile({
   userImage = "images/img_ellipse_11.png",
   userName = "Aayush",
   userOccupation = "3D Artist",
-  userActionButtonText = "3D Animator &  Modeler",
+  userActionButtonText = "3D Animator & Modeler",
+  isSelected = false, 
+  onSelect, // Optional callback for selection
   ...props
 }) {
   return (
     <div
       {...props}
-      className={`${props.className} flex flex-col justify-center self-stretch gap-[34px] p-5 flex-1 rounded-[20px]`}
+      onClick={onSelect} // Add optional click handler
+      className={`
+        flex flex-col justify-center self-stretch gap-[34px] p-5 flex-1 rounded-[20px]
+        transition-all duration-300 ease-in-out
+        ${
+          isSelected 
+            ? "bg-primary text-white" // Explicit primary background when selected
+            : "bg-white border border-primary text-primary" // White background with primary border when not selected
+        }
+        cursor-pointer // Add pointer cursor to indicate interactivity
+      `}
     >
-      <div className="mt-1 flex items-start justify-center gap-3.5 self-stretch">
-        <Img src={userImage} alt="Aayush" className="h-[46px] self-center rounded-[22px] object-cover" />
-        <div className="flex flex-1 flex-col items-start gap-0.5">
-          <Heading size="text6xl" as="p" className="text-[20px] font-normal">
+      <div className="mt-1 flex items-center justify-center gap-3.5 self-stretch">
+        <Img 
+          src={userImage} 
+          alt={userName} 
+          className="h-[50px] w-[50px] rounded-full object-cover" 
+        />
+        <div className="flex flex-col items-start">
+          <Heading 
+            size="text6xl" 
+            as="p" 
+            className={`
+              text-[40px] font-normal 
+              ${isSelected ? "text-white" : "text-primary"}
+            `}
+          >
             {userName}
           </Heading>
-          <Text size="text2xl" as="p" className="text-[10px] font-normal">
+          <Text 
+            size="text2xl" 
+            as="p" 
+            className={`
+              text-[20px] font-normal 
+              ${isSelected ? "text-white" : "text-primary"}
+            `}
+          >
             {userOccupation}
           </Text>
         </div>
       </div>
-      <Button size="sm" className="w-full max-w-[146px] self-stretch rounded-[10px] px-3 font-sfprodisplay">
+      <Button 
+        size="text2xl" 
+        className="w-full p-5 self-stretch rounded-[10px] px-3 font-sfprodisplay"
+      >
         {userActionButtonText}
       </Button>
     </div>
   );
 }
-
