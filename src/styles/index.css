@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Hammersmith One;
+  }
+  
+  * {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    margin: unset;
+  }
+  
+  .home_border {
+    backdrop-filter: blur(1px);
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #ffffff99, #ffffff4c);
+      background-clip: border-box;
+      mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude !important;
+      z-index: -10;
+      border-radius: 32px;
+      border: 0.53px solid transparent;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  
+  ul {
+    margin: 0;
+    margin-inline: unset !important;
+    padding: 0;
+    list-style: none;
+  }
+  
+  input {
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  label[floating-label] {
+    position: relative;
+  
+    & > input[floating-input] {
+      transition: all;
+      transition-duration: 0.25s;
+      outline: none !important;
+      border: none !important;
+      background: transparent !important;
+      max-height: 1.25em;
+      line-height: 1em;
+  
+      &:focus,
+      &:not(:placeholder-shown) {
+        outline: none !important;
+  
+        &::placeholder {
+          color: transparent;
+        }
+  
+        & ~ div[floating-text] {
+          opacity: unset;
+        }
+      }
+    }
+  
+    & > div[floating-text] {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transform-origin: top left;
+      transition: all;
+      transition-duration: 0.25s;
+      opacity: 0;
+      line-height: 1em;
+      pointer-events: none;
+    }
+  }
+  
+  label[floating-label="normal"] {
+    & > input[floating-input] {
+      &:focus,
+      &:not(:placeholder-shown) {
+        & ~ div[floating-text] {
+          top: 0em;
+          transform: translateY(-50%) scale(85%);
+          margin-right: -0.15em;
+          margin-left: -0.15em;
+          padding-right: 0.15em;
+          padding-left: 0.15em;
+          backdrop-filter: blur(3em);
+        }
+      }
+    }
+  }
+  
+  label[floating-label="contained"] {
+    & > input[floating-input] {
+      &:focus,
+      &:not(:placeholder-shown) {
+        transform: translateY(0.5em);
+  
+        & ~ div[floating-text] {
+          top: calc(50% - 1.25em);
+          transform: scale(85%);
+        }
+      }
+    }
+  }
+  
+  

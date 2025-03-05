@@ -1,0 +1,30 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/HanumanBold.ttf");
+    font-family: "Hanuman";
+    font-weight: 700;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/HammersmithOneRegular.ttf");
+    font-family: "Hammersmith One";
+    font-weight: 400;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterRegular.ttf");
+    font-family: "Inter";
+    font-weight: 400;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/ImprimaRegular.ttf");
+    font-family: "Imprima";
+    font-weight: 400;
+  }
+  
+  

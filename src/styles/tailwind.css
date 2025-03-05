@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900: #000000;
+    --black_900_4c: #0000004c;
+    --blue_100: #aecbf9;
+    --blue_100_01: #c9deff;
+    --blue_100_02: #afcbfa;
+    --blue_200: #97beff;
+    --blue_300: #64a5ff;
+    --blue_400: #4c9eff;
+    --blue_50: #dce6ff;
+    --blue_500: #2196f3;
+    --blue_50_01: #e7f1ff;
+    --blue_a100: #76a9fd;
+    --blue_a200: #4d92ff;
+    --blue_gray_100: #cccccc;
+    --blue_gray_400: #8d8d8d;
+    --blue_gray_400_01: #888888;
+    --cyan_100: #c3fff1;
+    --deep_purple_a200_00: #7752fe00;
+    --gray_100: #f7f7f7;
+    --gray_200: #ececec;
+    --gray_200_01: #efefef;
+    --gray_300: #e6e6e6;
+    --gray_500: #9b9b9b;
+    --gray_500_01: #ada8a8;
+    --gray_600: #6f6f6f;
+    --gray_800: #494949;
+    --gray_800_01: #484848;
+    --gray_900: #191919;
+    --gray_900_01: #232323;
+    --pink_200: #ff9faf;
+    --pink_400: #f45670;
+    --pink_a100: #ff8599;
+    /* --primary: #008D5E; green color */
+    --primary: #7752fe; 
+    --red_100: #ffd2d9;
+    --red_a400: #ff1e1e;
+    --teal_a100: #99ffe7;
+    --teal_a100_01: #b2ffed;
+    --teal_a400: #39dbb6;
+    --teal_a700: #00ba8f;
+    --white_a700: #ffffff;
+    --white_a700_00: #ffffff00;
+    --white_a700_0c: #ffffff0c;
+    --white_a700_19: #ffffff19;
+    --white_a700_4c: #ffffff4c;
+    --white_a700_99: #ffffff99;
+
+    /*------Shadow variables------*/
+    --shadow-bs: inset 0 0 4px 0 #0000004c;
+    --shadow-bs1: inset 1px 0 1px 0 #ffffff;
+    --shadow-bs2: inset -0.53px 0 1px 0 #ffffff;
+
+    /*------Border radius variables------*/
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+    --radius-2xl: 14px;
+    --radius-3xl: 18px;
+    --radius-4xl: 20px;
+    --radius-5xl: 22px;
+    --radius-6xl: 28px;
+    --radius-7xl: 30px;
+    --radius-8xl: 32px;
+    --radius-9xl: 40px;
+
+    /*------Spacing variables------*/
+    --space-xs: 2px;
+    --space-sm: 4px;
+    --space-md: 6px;
+    --space-lg: 8px;
+    --space-xl: 10px;
+    --space-2xl: 12px;
+    --space-3xl: 14px;
+    --space-4xl: 16px;
+    --space-5xl: 18px;
+    --space-6xl: 20px;
+    --space-7xl: 22px;
+    --space-8xl: 24px;
+    --space-9xl: 26px;
+    --space-10xl: 30px;
+    --space-11xl: 32px;
+    --space-12xl: 34px;
+    --space-13xl: 36px;
+    --space-14xl: 44px;
+    --space-15xl: 54px;
+    --space-16xl: 60px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: initial;
+    background-color: initial;
+    border: initial;
+    border-width: 0;
+  }
+}
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1206px];
+  }
+}
+
