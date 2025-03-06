@@ -3,7 +3,6 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import UIUXDesignComponent from "components/UIUXDesignComponent";
 import ServicesColumnbasicpack from "./ServicesColumnbasicpack";
-// import ServicesRowcontactus from "./ServicesRowcontactus";
 import ContactUs from "../../components/ContactUs";
 import { Text, Heading } from "components/ui";
 import React, { Suspense } from "react";

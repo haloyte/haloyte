@@ -20,7 +20,7 @@ export default function UIUXDesignComponent({
           </Button>
         </div>
         <div className="relative mt-[-38px] rounded-[20px] border-4 border-solid border-primary py-11 md:py-5">
-          <div className="mt-2.5 flex items-start justify-center px-14 md:flex-col md:px-5">
+          <div className="md:mt-2.5 sm:mt-8 flex items-start justify-center px-14 md:flex-col md:px-5">
             <Heading as="h1" className="self-center text-[80px] font-bold md:text-[48px]">
               {headingText}
             </Heading>

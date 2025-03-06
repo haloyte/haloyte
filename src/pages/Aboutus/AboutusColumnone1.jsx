@@ -7,7 +7,7 @@ const data = [
   { buttonLabel: "01", headingText: "UI/UX DESIGN" },
   { buttonLabel: "01", headingText: "UI/UX DESIGN" },
 ];
-
+// a
 export default function AboutusColumnone1() {
   return (
     <div className="mb-[50px] flex flex-col items-center gap-5">
