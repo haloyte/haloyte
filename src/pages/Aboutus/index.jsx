@@ -34,7 +34,7 @@ export default function AboutusPage() {
               <Header className="gap-8" />
             </div>
             <div className="mx-[72px] flex flex-col items-center gap-1.5 md:mx-0">
-              <Heading as="h1" className="text-[80px] font-bold md:text-[48px]">
+              <Heading as="h1" className="text-[80px] font-bold md:text-[48px] text-center">
                 ABOUT HALOYTE
               </Heading>
               <Text

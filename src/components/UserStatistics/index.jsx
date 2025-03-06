@@ -32,15 +32,16 @@ export default function UserStatistics({
   };
 
   return (
-    <div {...props} className={`${props.className} flex justify-center items-center py-5 bg-primary`}>
+    <div className="mb-16">
+       <div {...props} className={`${props.className} flex justify-center items-center py-5 bg-primary`}>
       <div className="mx-auto flex w-full max-w-[1206px] items-center justify-between px-14 md:px-5">
 
         {/* Experience Section - Solid + */}
         <div className="flex flex-col items-center w-1/3 px-4">
-          <Text size="text12xl" as="p" className="text-[96px] font-bold md:text-[48px]">
+          <Text size="text12xl" as="p" className="text-[96px] font-bold md:text-[48px] sm:text-[39px] sm:mb-4">
             {formatCount(experienceCount, false)}
           </Text>
-          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px]">
+          <Text size="text7xl" as="p" className="lg:text-[24px] font-bold md:text-[20px] sm:text-[18px] text-center sm:me-4">
             {experienceLabel}
           </Text>
         </div>
@@ -50,7 +51,7 @@ export default function UserStatistics({
           <Text 
             size="text12xl" 
             as="p" 
-            className="text-[96px] font-bold md:text-[48px] text-transparent"
+            className="text-[96px] font-bold md:text-[48px] sm:text-[39px]"
             style={{
               WebkitTextStroke: "2px white",
               color: "transparent",
@@ -58,22 +59,23 @@ export default function UserStatistics({
           >
             {formatCount(projectCount, true)}
           </Text>
-          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px] text-center">
+          <Text size="text7xl" as="p" className="lg:text-[24px] font-bold md:text-[20px] sm:text-[18px] text-center">
             {projectsCompletedLabel}
           </Text>
         </div>
 
         {/* Happy Clients Section - Solid + */}
         <div className="flex flex-col items-center w-1/3 px-4">
-          <Text size="text12xl" as="p" className="text-[96px] font-bold md:text-[48px]">
+          <Text size="text12xl" as="p" className="text-[96px] font-bold md:text-[48px] sm:text-[39px]">
             {formatCount(happyClientsCount, false)}
           </Text>
-          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px] text-center">
+          <Text size="text7xl" as="p" className="lg:text-[24px] font-bold md:text-[20px] sm:text-[18px] text-center">
             {happyClientsLabel}
           </Text>
         </div>
 
       </div>
+    </div>
     </div>
   );
 }
