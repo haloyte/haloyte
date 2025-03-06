@@ -24,7 +24,7 @@ export default function LandingRowlinetwelve() {
                   <Heading
                     size="heading2xl"
                     as="h2"
-                    className="relative mt-[-8px] self-end text-[48px] font-bold md:text-[44px] sm:text-[38px]"
+                    className=" mt-[-8px] text-[48px] font-bold md:text-[44px] sm:text-[38px]"
                   >
                     SKILLS
                   </Heading>

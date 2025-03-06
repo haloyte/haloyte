@@ -18,7 +18,7 @@ export default function LandingRowFive() {
                 <Text
                   size="text9xl"
                   as="p"
-                  className="self-end text-[46px] font-normal leading-[57px] md:text-[42px] sm:text-[36px]"
+                  className="text-center text-[46px] font-normal leading-[57px] md:text-[42px] sm:text-[28px]"
                 >
                   <span>
                     <>
@@ -26,12 +26,12 @@ export default function LandingRowFive() {
                       <br />
                     </>
                   </span>
-                  <span className="text-[35px] flex items-center gap-2">
+                  <span className="md:text-[35px] sm:text-[23px] flex items-center gap-2">
                     A
                     <Button
                       size="8xl"
                       shape="square"
-                      className="inline-flex w-full min-w-[312px] max-w-[312px] rotate-[-2deg] px-[18px] align-middle"
+                      className="inline-flex md:w-full sm:w-[100%] sm:h-[100%] min-w-[312px] sm:min-w-[212px] max-w-[312px] sm:text-[28px] rotate-[-2deg] md:px-[18px] sm:px-[4px] align-middle"
                     >
                       CONSTANTLY
                     </Button>

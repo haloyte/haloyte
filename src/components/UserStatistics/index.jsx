@@ -58,7 +58,7 @@ export default function UserStatistics({
           >
             {formatCount(projectCount, true)}
           </Text>
-          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px]">
+          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px] text-center">
             {projectsCompletedLabel}
           </Text>
         </div>
@@ -68,7 +68,7 @@ export default function UserStatistics({
           <Text size="text12xl" as="p" className="text-[96px] font-bold md:text-[48px]">
             {formatCount(happyClientsCount, false)}
           </Text>
-          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px]">
+          <Text size="text7xl" as="p" className="text-[24px] font-bold md:text-[20px] text-center">
             {happyClientsLabel}
           </Text>
         </div>
